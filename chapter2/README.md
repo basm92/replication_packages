@@ -9,4 +9,5 @@
 
   - The Data on the basis of which these Figures and Tables were created. 
     - The Data contains several files. Below is a description:
+    - `AnalysisFile.xlsx` - Raw file containing the Probate Inventories Data
 
