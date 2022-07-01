@@ -1,0 +1,35 @@
+#key government affiliation
+
+govt_orientation <- data.frame(government = c("Thorbecke III",
+                          "De Vries/Fransen van de Putte",
+                          "Heemskerk/Van Lynden van Sandenburg",
+                          "Kappeyne van de Coppello",
+                          "Van Lynden van Sandenburg",
+                          "Heemskerk Azn.",
+                          "Mackay",
+                          "Van Tienhoven",
+                          "Röell",
+                          "Pierson",
+                          "Kuyper",
+                          "De Meester",
+                          "Heemskerk",
+                          "Cort van der Linden",
+                          "Ruijs de Beerenbrouck I"),
+           orientation = c("liberal",
+                           "liberal",
+                           "confessional",
+                           "liberal",
+                           "confessional-liberal",
+                           "confessional-liberal",
+                           "confessional",
+                           "liberal",
+                           "confessional-liberal",
+                           "liberal",
+                           "confessional",
+                           "liberal",
+                           "confessional",
+                           "liberal",
+                           "confessional"
+                           ))
+
+write_csv(govt_orientation, "./Data/gov_orientation.csv")           
