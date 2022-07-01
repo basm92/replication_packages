@@ -18,4 +18,4 @@
     	- `key_politicalparty_category.csv` - Mapping from heterogeneous party classification to $\{ \text{Confessional, Liberal, Socialist} \}$.
     	- `lh_parliaments.csv`, `uh_parliaments.csv` - Lists of names of MPs (Lower House and Upper House respectively) and periods of activity.
     	- `lowerhouse.csv`, `lowerhouse_clean.csv`, `upperhouse.csv`, `upperhouse_clean.csv` - Raw and cleaned lists of names of MPs. 
-	- `Wealth Tax (in Numbers) 20200606.xlsx` - Data about wealth distribution in the population from De Vicq et al. (2020).
+    	- `Wealth Tax (in Numbers) 20200606.xlsx` - Data about wealth distribution in the population from De Vicq et al. (2020).
