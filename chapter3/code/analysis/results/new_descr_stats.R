@@ -30,9 +30,7 @@ datasets2 <- datasets %>%
            percentage_aangesl = as.numeric(percentage_aangesl)/100,
            socialistpercentage = socialistpercentage/100)
 
-# Table with percentages
-modelsummary::datasummary(data = datasets2, category*(year_law*law) ~ class * vote*Mean * DropEmpty())
-
+# Table 3.2 Below
 # Table with dissent
 ## Dissent function
 dissent <- function(x) {
@@ -84,7 +82,7 @@ modelsummary::datasummary(data = datasets2 %>%
     kableExtra::kable_styling(latex_options = c("hold_position", "scale_down"))
 
 
-
+# Table 3.3 Below
 ## Now the "regular" descriptive statistics
 source("./code/analysis/results/get_data.R")
 

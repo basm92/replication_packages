@@ -2,6 +2,7 @@
 source("./code/analysis/results/get_data.R")
 source("./code/analysis/results/oster_selection_statistics.R")
 
+# Table 3.4 Below 
 ## Models - for both
 model1 <- datasets %>%
   filter(category == "fisc" | category == "suffrage", 
@@ -45,6 +46,7 @@ modelsummary(ols_pooled,
   kableExtra::add_header_above(c(" " = 1, "Pooled" = 3, "Suffrage" = 1, "Fiscal" = 1)) %>%
   kableExtra::save_kable("./tables/ols_pooled.tex")
 
+# Table 3.5 Below
 # Suffrage (First three panels) and Fiscal (Second three panels)
 model1 <-lm(data = suffrage, formula = vote ~ ihs(wealth_timevote) + law + class)
 model2 <- lm(data = suffrage, formula = vote ~ ihs(wealth_timevote) + law + class + 
@@ -84,7 +86,7 @@ modelsummary(hoihoi,
 saveRDS(fiscal, "./figures/model_ols_data.RDS")
 saveRDS(model5, "./figures/model_ols.RDS")
 
-
+# Table 3.6 Below
 ## Endogeneity test
 suffrage_iv <- left_join(suffrage, fiscal_iv %>%
                            select(b1_nummer, profdummy3, par_wealth, exp_inherit), 
@@ -145,6 +147,8 @@ modelsummary(bido,
 
 saveRDS(model6, "./figures/model_endog_ols.RDS")
 saveRDS(fiscal_iv, "./figures/model_endog_ols_data.RDS")
+
+# Table 3.7 Below
 ## Iv results for suffrage - null results
 
 suffrage_iv <- left_join(suffrage, fiscal_iv %>%
@@ -193,6 +197,7 @@ modelsummary(ivres,
   kableExtra::kable_styling(latex_options = c("hold_position", "scale_down")) %>%
     kableExtra::save_kable("./tables/iv_results_suffrage.tex")
 
+# Table 3.8 Below
 ## Iv results - profdummy 3 - fiscal 
 fs1 <- lm(data = fiscal_iv %>%
             filter(class != "neutral"),
@@ -254,6 +259,7 @@ modelsummary(ivresults,
 saveRDS(iv2, "./figures/model_iv2.RDS")
 saveRDS(fiscal_iv, "./figures/model_iv2_data.RDS")
 
+# Table 3.9 Below
 ## Inheritance results - fiscal 
 fs1 <- lm(data = fiscal_iv %>%
             mutate(exp_inherit = exp_inherit/100000) %>%
@@ -326,6 +332,7 @@ modelsummary(ivresults,
 saveRDS(iv2, "./figures/model_inheritance_iv.RDS")
 saveRDS(fiscal_iv, "./figures/model_inheritance_iv_data.RDS")
 
+# Table 3.10 Below
 ## selection results
 datasets2 <- datasets2 %>%
   mutate(observed = if_else(!is.na(wealth_timevote), 1, 0),
@@ -370,6 +377,7 @@ modelsummary(selection,
     kableExtra::save_kable("./tables/ols_selection.tex")
 
 
+# Table 3.A.1 Below
 # logit results - suffrage
 library(survival)
 model1 <- clogit(formula = vote ~ ihs(wealth_timevote) + strata(law) + strata(class), data = suffrage)
@@ -410,6 +418,7 @@ modelsummary(modelz,
   kableExtra::add_header_above(c(" " = 1, "Suffrage" = 3, "Fiscal" = 3)) %>%
     kableExtra::save_kable("./tables/logit_suffrage_fiscal.tex")
 
+# Table 3.A.2 Below
 ## Results with NW0 instead of wealth_timevote - fiscal results
 ols1 <- lm(data = fiscal, formula = vote ~ ihs(nw0) + law + class)
 ols2 <- lm(data = fiscal, formula = vote ~ ihs(nw0) + law + class + 
@@ -458,7 +467,7 @@ modelsummary(modelletjes,
     kableExtra::save_kable("./tables/ols_iv_fisc_nw0.tex")
 
 
-
+# Table 3.A.3 Below
 ## Results with log wealth instead of ihs
 fs1 <- lm(data = fiscal_iv,
           formula = log(1+wealth_timevote) ~ profdummy3 + class + law)
@@ -507,7 +516,7 @@ modelsummary(ivresults,
 saveRDS(iv2, "./figures/model_iv2_log.RDS")
 saveRDS(fiscal_iv, "./figures/model_iv2_log_data.RDS")
 
-
+# Table 3.A.9 Below
 ## Results of placebo test with government intervention
 polfams <- read_csv("./data/polid_data/political_families.csv")
 govtint <- govtint %>% left_join(polfams) %>%

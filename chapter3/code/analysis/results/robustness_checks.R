@@ -21,6 +21,7 @@ datasets_rob <- datasets %>%
         TRUE ~ NA_character_
     ))
 
+# Table 3.A.4 Below
 ## OLS Models - for both
 model1 <- datasets_rob %>%
     filter(category == "fisc" | category == "suffrage", 
@@ -65,6 +66,7 @@ modelsummary(ols_pooled,
     kableExtra::save_kable("./tables/ols_pooled_otherclassific.tex")
 
 
+# Table 3.A.5 Below
 ## IV models - suffrage
 suffrage_iv <- left_join(suffrage, fiscal_iv %>%
                              select(b1_nummer, profdummy3), by = "b1_nummer") %>%
@@ -122,6 +124,7 @@ modelsummary(ivres,
     kableExtra::kable_styling(latex_options = c("hold_position", "scale_down")) %>%
     kableExtra::save_kable("./tables/iv_results_suffrage_otherclassific.tex")
 
+# Table 3.A.6 Below
 ## IV - fiscal
 fiscal_iv <- fiscal_iv %>% left_join(rough_classific)
 fiscal_iv <- fiscal_iv %>% 
@@ -191,7 +194,7 @@ modelsummary(ivresults,
 
 # check 2: party*law interaction fixed effects (only ols)
 
-
+# Table 3.A.7 Below
 ## with old classification
 model1 <- datasets %>%
     filter(category == "fisc" | category == "suffrage", 
@@ -239,7 +242,7 @@ modelsummary(ols_pooled,
     kableExtra::save_kable("./tables/ols_pooled_lawpartyint.tex")
 
 
-
+# Table 3.A.8 Below
 ## with new classification
 model1 <- datasets_rob %>%
     filter(category == "fisc" | category == "suffrage", 
