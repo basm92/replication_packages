@@ -1,0 +1,58 @@
+\begin{table}[!h]
+
+\caption{\label{tab:attresults_robust_bw}ATT estimates for different $t^*$: Different BW Selector}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{threeparttable}
+\begin{tabular}[t]{llllllll}
+\toprule
+  & t=1 & t=2 & t=3 & t=4 & t=5 & t=6 & t=7\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel A: t* = 4}}\\
+\hspace{1em}Coefficient (ITT) & 1.287 & 0.583 & -0.126 & -0.803 &  &  & \\
+\hspace{1em}SE (ITT) & (0.45)*** & (0.665) & (0.683) & (0.708) &  &  & \\
+\hspace{1em}Coefficient (ATT) & 1.193 & 0.499 & -0.187 & -0.803 &  &  & \\
+\hspace{1em}SE (ATT) & (0.555)** & (0.768) & (0.737) & (0.708) &  &  & \\
+\hspace{1em}N Treated & 295 & 219 & 172 & 141 &  &  & \\
+\hspace{1em}N Control & 774 & 145 & 98 & 78 &  &  & \\
+\hspace{1em}Mean DV Treated & 12.375 & 11.709 & 11.594 & 12.224 &  &  & \\
+\hspace{1em}Mean DV Control & 11.004 & 10.505 & 11.944 & 12.677 &  &  & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel B: t* = 5}}\\
+\hspace{1em}Coefficient (ITT) & 1.287 & 0.583 & -0.126 & -0.803 & 0.711 &  & \\
+\hspace{1em}SE (ITT) & (0.45)*** & (0.665) & (0.683) & (0.708) & (0.995) &  & \\
+\hspace{1em}Coefficient (ATT) & 1.284 & 0.592 & -0.103 & -0.725 & 0.711 &  & \\
+\hspace{1em}SE (ATT) & (0.61)** & (0.823) & (0.808) & (0.817) & (0.995) &  & \\
+\hspace{1em}N Treated & 295 & 219 & 172 & 141 & 101 &  & \\
+\hspace{1em}N Control & 774 & 145 & 98 & 78 & 43 &  & \\
+\hspace{1em}Mean DV Treated & 12.375 & 11.709 & 11.594 & 12.224 & 11.657 &  & \\
+\hspace{1em}Mean DV Control & 11.004 & 10.505 & 11.944 & 12.677 & 11.997 &  & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel C: t* = 6}}\\
+\hspace{1em}Coefficient (ITT) & 1.287 & 0.583 & -0.126 & -0.803 & 0.711 & -0.158 & \\
+\hspace{1em}SE (ITT) & (0.45)*** & (0.665) & (0.683) & (0.708) & (0.995) & (0.578) & \\
+\hspace{1em}Coefficient (ATT) & 1.269 & 0.577 & -0.117 & -0.738 & 0.699 & -0.158 & \\
+\hspace{1em}SE (ATT) & (0.619)** & (0.833) & (0.819) & (0.829) & (1.036) & (0.578) & \\
+\hspace{1em}N Treated & 295 & 219 & 172 & 141 & 101 & 75 & \\
+\hspace{1em}N Control & 774 & 145 & 98 & 78 & 43 & 42 & \\
+\hspace{1em}Mean DV Treated & 12.375 & 11.709 & 11.594 & 12.224 & 11.657 & 12.194 & \\
+\hspace{1em}Mean DV Control & 11.004 & 10.505 & 11.944 & 12.677 & 11.997 & 13.187 & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel D: t* = 7}}\\
+\hspace{1em}Coefficient (ITT) & 1.287 & 0.583 & -0.126 & -0.803 & 0.711 & -0.158 & -0.906\\
+\hspace{1em}SE (ITT) & (0.45)*** & (0.665) & (0.683) & (0.708) & (0.995) & (0.578) & (0.848)\\
+\hspace{1em}Coefficient (ATT) & 1.17 & 0.476 & -0.208 & -0.822 & 0.623 & -0.229 & -0.906\\
+\hspace{1em}SE (ATT) & (0.637)* & (0.851) & (0.84) & (0.851) & (1.076) & (0.644) & (0.848)\\
+\hspace{1em}N Treated & 295 & 219 & 172 & 141 & 101 & 75 & 52\\
+\hspace{1em}N Control & 774 & 145 & 98 & 78 & 43 & 42 & 23\\
+\hspace{1em}Mean DV Treated & 12.375 & 11.709 & 11.594 & 12.224 & 11.657 & 12.194 & 12.112\\
+\hspace{1em}Mean DV Control & 11.004 & 10.505 & 11.944 & 12.677 & 11.997 & 13.187 & 13.103\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing coefficients effects of stints \{1, \dots, $t^*$\} under different $t^* \in \{4,5,6,7\}$. All the ATT coefficients are derived and recursively computed from ITT coefficients, which are in turn estimated using the methodology in \citep{cattaneo2019practical} using the \textit{certwo} bandwidth selector. Standard errors are calculated using the delta method. The estimates in both panels control for birthplace population, birthplace characteristics, age at election, newspaper recommendations (party) and politicians' lifespan. *: p < 0.10, **: p < 0.05, ***: p < 0.01. 
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

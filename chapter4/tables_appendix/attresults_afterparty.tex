@@ -1,0 +1,58 @@
+\begin{table}[!h]
+
+\caption{\label{tab:attresults_after}ATT estimates for different $t^*$ - After Party Formation}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{threeparttable}
+\begin{tabular}[t]{llllllll}
+\toprule
+  & t=1 & t=2 & t=3 & t=4 & t=5 & t=6 & t=7\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel A: t* = 4}}\\
+\hspace{1em}Coefficient (ITT) & 0.275 & 1.253 & 1.13 & 0.128 &  &  & \\
+\hspace{1em}SE (ITT) & (0.617) & (0.465)*** & (0.624)* & (0.727) &  &  & \\
+\hspace{1em}Coefficient (ATT) & 0.361 & 1.322 & 1.136 & 0.128 &  &  & \\
+\hspace{1em}SE (ATT) & (0.666) & (0.513)** & (0.655)* & (0.727) &  &  & \\
+\hspace{1em}N Treated & 131 & 94 & 82 & 76 &  &  & \\
+\hspace{1em}N Control & 238 & 60 & 51 & 36 &  &  & \\
+\hspace{1em}Mean DV Treated & 12.27 & 12.053 & 13.045 & 12.078 &  &  & \\
+\hspace{1em}Mean DV Control & 10.541 & 11.096 & 11.848 & 12.742 &  &  & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel B: t* = 5}}\\
+\hspace{1em}Coefficient (ITT) & 0.275 & 1.253 & 1.13 & 0.128 & 0.767 &  & \\
+\hspace{1em}SE (ITT) & (0.617) & (0.465)*** & (0.624)* & (0.727) & (0.558) &  & \\
+\hspace{1em}Coefficient (ATT) & 0.485 & 1.444 & 1.251 & 0.239 & 0.767 &  & \\
+\hspace{1em}SE (ATT) & (0.714) & (0.561)** & (0.712)* & (0.808) & (0.558) &  & \\
+\hspace{1em}N Treated & 131 & 94 & 82 & 76 & 51 &  & \\
+\hspace{1em}N Control & 238 & 60 & 51 & 36 & 33 &  & \\
+\hspace{1em}Mean DV Treated & 12.27 & 12.053 & 13.045 & 12.078 & 13.214 &  \vphantom{1} & \\
+\hspace{1em}Mean DV Control & 10.541 & 11.096 & 11.848 & 12.742 & 11.817 &  & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel C: t* = 6}}\\
+\hspace{1em}Coefficient (ITT) & 0.275 & 1.253 & 1.13 & 0.128 & 0.767 & 0.267 & \\
+\hspace{1em}SE (ITT) & (0.617) & (0.465)*** & (0.624)* & (0.727) & (0.558) & (0.64) & \\
+\hspace{1em}Coefficient (ATT) & 0.509 & 1.468 & 1.274 & 0.26 & 0.786 & 0.267 & \\
+\hspace{1em}SE (ATT) & (0.729) & (0.577)** & (0.728)* & (0.825) & (0.603) & (0.64) & \\
+\hspace{1em}N Treated & 131 & 94 & 82 & 76 & 51 & 38 & \\
+\hspace{1em}N Control & 238 & 60 & 51 & 36 & 33 & 17 & \\
+\hspace{1em}Mean DV Treated & 12.27 & 12.053 & 13.045 & 12.078 & 13.214 &  & \\
+\hspace{1em}Mean DV Control & 10.541 & 11.096 & 11.848 & 12.742 & 11.817 & 13.187 \vphantom{1} & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel D: t* = 7}}\\
+\hspace{1em}Coefficient (ITT) & 0.275 & 1.253 & 1.13 & 0.128 & 0.767 & 0.267 & -2.952\\
+\hspace{1em}SE (ITT) & (0.617) & (0.465)*** & (0.624)* & (0.727) & (0.558) & (0.64) & (1.623)*\\
+\hspace{1em}Coefficient (ATT) & -0.032 & 0.934 & 0.768 & -0.224 & 0.362 & -0.129 & -2.952\\
+\hspace{1em}SE (ATT) & (0.878) & (0.726) & (0.88) & (0.98) & (0.784) & (0.857) & (1.623)*\\
+\hspace{1em}N Treated & 131 & 94 & 82 & 76 & 51 & 38 & 30\\
+\hspace{1em}N Control & 238 & 60 & 51 & 36 & 33 & 17 & 18\\
+\hspace{1em}Mean DV Treated & 12.27 & 12.053 & 13.045 & 12.078 & 13.214 &  & 12.112\\
+\hspace{1em}Mean DV Control & 10.541 & 11.096 & 11.848 & 12.742 & 11.817 & 13.187 & \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing coefficients effects of stints \{1, \dots, $t^*$\} under different $t^* \in \{4,5,6,7\}$ after party formation. All the ATT coefficients are derived and recursively computed from ITT coefficients, which are in turn estimated using the methodology in \citep{cattaneo2019practical} using MSE-optimal bandwidth. Standard errors are calculated using the delta method. The estimates in both panels control for birthplace population, birthplace characteristics, age at election, newspaper recommendations (party) and politicians' lifespan. *: p < 0.10, **: p < 0.05, ***: p < 0.01. 
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

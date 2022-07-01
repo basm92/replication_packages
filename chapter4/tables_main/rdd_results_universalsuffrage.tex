@@ -1,0 +1,27 @@
+\begin{table}[!h]
+
+\caption{\label{tab:rdd_results_universalsuffrage}RD Estimates of Being Elected on Personal Wealth Before/After Suffrage Extensions}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Before 1887} & \multicolumn{2}{c}{Between 1887-1897} & \multicolumn{2}{c}{After 1897} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Coefficient (ITT) & 1.376 & 1.328 & 1.395 & 1.440 & -1.471 & -0.849\\
+SE (BC) & (0.562)*** & (0.575)** & (1.181) & (1.338) & (0.789)** & (0.874)\\
+Mean DV Treated (1\%) & 12.342 & 12.342 & 12.780 & 12.780 & 10.274 & 10.274\\
+Mean DV Control (1\%) & 10.904 & 10.904 & 9.792 & 9.792 & 11.572 & 11.572\\
+N Treated & 147 & 148 & 48 & 48 & 64 & 64\\
+N Control & 431 & 436 & 117 & 117 & 73 & 73\\
+Bandwidth & Optimal & Optimal & Optimal & Optimal & Optimal & Optimal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing the effect of being elected into politics on personal end-of-life wealth. The dependent variable is Log(1+Wealth at Death). The estimates show Bias-corrected and Robust standard errors clustered at the individual-level. All effects are estimated under the MSE-optimal bandwidth. I use two sets of covariates: in columns (1), (3) and (5) I control for birtplace population, and demographics, and newspaper recommendations (party). In columns (2), (4) and (6) I control for number of tries, birthplace demographics, district demographics and number of tries. *: p < 0.10, **: p < 0.05, ***: p < 0.01.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

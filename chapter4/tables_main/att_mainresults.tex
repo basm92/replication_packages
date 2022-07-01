@@ -1,0 +1,38 @@
+\begin{table}[!h]
+
+\caption{\label{tab:attresults}ATT estimates for different $t^*$}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{llllllll}
+\toprule
+  & t=1 & t=2 & t=3 & t=4 & t=5 & t=6 & t=7\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel A: t* = 4}}\\
+\hspace{1em}Coefficient (ITT) & 1.062 & 0.342 & 0 & -0.685 &  &  & \\
+\hspace{1em}SE (ITT) & (0.399)*** & (0.611) & (0.613) & (0.633) &  &  & \\
+\hspace{1em}Coefficient (ATT) & 0.997 & 0.283 & -0.053 & -0.685 &  &  & \\
+\hspace{1em}SE (ATT) & (0.492)** & (0.704) & (0.661) & (0.633) &  &  & \\
+\hspace{1em}N Treated & 295 & 219 & 172 & 141 &  &  & \\
+\hspace{1em}N Control & 774 & 145 & 98 & 78 &  &  & \\
+\hspace{1em}Mean DV Treated & 12.375 & 11.709 & 11.594 & 12.224 &  &  & \\
+\hspace{1em}Mean DV Control & 11.004 & 10.505 & 11.944 & 12.677 &  &  & \\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel B: t* = 7}}\\
+\hspace{1em}Coefficient (ITT) & 1.062 & 0.342 & 0 & -0.685 & 0.746 & -0.129 & -0.771\\
+\hspace{1em}SE (ITT) & (0.399)*** & (0.611) & (0.613) & (0.633) & (0.937) & (0.562) & (0.83)\\
+\hspace{1em}Coefficient (ATT) & 0.997 & 0.282 & -0.054 & -0.686 & 0.672 & -0.189 & -0.771\\
+\hspace{1em}SE (ATT) & (0.574)* & (0.785) & (0.762) & (0.769) & (1.016) & (0.627) & (0.83)\\
+\hspace{1em}N Treated & 295 & 219 & 172 & 141 & 101 & 75 & 52\\
+\hspace{1em}N Control & 774 & 145 & 98 & 78 & 43 & 42 & 23\\
+\hspace{1em}Mean DV Treated & 12.375 & 11.709 & 11.594 & 12.224 & 11.657 & 12.194 & 12.112\\
+\hspace{1em}Mean DV Control & 11.004 & 10.505 & 11.944 & 12.677 & 11.997 & 13.187 & 13.103\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing coefficients effects of stints \{1, \dots, $t^*$\} under different $t^* \in \{4,7\}$. All the ATT coefficients are derived and recursively computed from ITT coefficients, which are in turn estimated using the methodology in \citep{cattaneo2019practical} using MSE-optimal bandwidth. Standard errors are calculated using the delta method. The estimates in both panels control for birthplace population, birthplace characteristics, age at election, newspaper recommendations (party) and politicians' lifespan. *: p < 0.10, **: p < 0.05, ***: p < 0.01. 
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

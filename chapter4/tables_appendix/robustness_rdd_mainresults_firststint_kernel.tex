@@ -1,0 +1,38 @@
+\begin{table}[!h]
+
+\caption{\label{tab:mainresults_robust_kernel}Robustness to Main RD Estimates - 1st Period: Kernel}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lllllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{4}{c}{First Triers} & \multicolumn{2}{c}{Second Triers} & \multicolumn{2}{c}{All Triers} \\
+\cmidrule(l{3pt}r{3pt}){2-5} \cmidrule(l{3pt}r{3pt}){6-7} \cmidrule(l{3pt}r{3pt}){8-9}
+  & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{Panel A: Uniform Kernel}}\\
+\hspace{1em}Coefficient (ITT) & 1.774 & 1.981 & 2.341 & 1.830 & 2.270 & 1.217 & 0.748 & 0.496\\
+\hspace{1em}SE (BC) & (0.746)** & (0.593)*** & (0.861)** & (0.649)*** & (1.121)** & (0.839) & (0.524) & (0.393)\\
+\hspace{1em}Mean DV Treated (1\%) & 12.849 & 12.849 & 12.901 & 12.901 & 11.059 & 11.059 & 12.225 & \vphantom{1} 12.225\\
+\hspace{1em}Mean DV Control (1\%) & 10.193 & 10.193 & 10.577 & 10.577 & 9.277 & 9.277 & 10.660 & \vphantom{1} 10.660\\
+\hspace{1em}N (Politicians) & 103 & 103 & 70 & 70 & 54 & 54 & 244 & \vphantom{1} 244\\
+\hspace{1em}N (Non-Politicians) & 172 & 172 & 120 & 120 & 145 & 145 & 579 & \vphantom{1} 579\\
+\hspace{1em}Bandwidth & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x \vphantom{1} Optimal\\
+\addlinespace[0.3em]
+\multicolumn{9}{l}{\textbf{Panel B: Yepanechnikov Kernel}}\\
+\hspace{1em}Coefficient (ITT) & 1.681 & 1.865 & 2.301 & 2.244 & 2.228 & 1.474 & 0.884 & 0.488\\
+\hspace{1em}SE (BC) & (0.686)* & (0.519)*** & (0.925)** & (0.724)*** & (1.178)* & (0.888) & (0.583) & (0.436)\\
+\hspace{1em}Mean DV Treated (1\%) & 12.849 & 12.849 & 12.901 & 12.901 & 11.059 & 11.059 & 12.225 & 12.225\\
+\hspace{1em}Mean DV Control (1\%) & 10.193 & 10.193 & 10.577 & 10.577 & 9.277 & 9.277 & 10.660 & 10.660\\
+\hspace{1em}N (Politicians) & 103 & 103 & 70 & 70 & 54 & 54 & 244 & 244\\
+\hspace{1em}N (Non-Politicians) & 172 & 172 & 120 & 120 & 145 & 145 & 579 & 579\\
+\hspace{1em}Bandwidth & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing Bias-corrected standard errors clustered at the Birthplace-level. The first two columns show univariate regressions under the optimal MSE bandwidth with the option \textit{msecomb2}, and twice the optimal bandwidth. In columns 3 and 4, selected covariates are added, an alternative selection to the covariates in the main results. In particular, the regression controls for district religious share, birthplace population, birthplace religious share, district GDP, lifespan and birthplace labor force composition. Columns 5 and 6 focus on second-triers and columns 7 and 8 pool all attempts. *: p < 0.10, **: p < 0.05, ***: p < 0.01. 
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

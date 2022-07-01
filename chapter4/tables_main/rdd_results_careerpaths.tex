@@ -1,0 +1,40 @@
+\begin{table}[!h]
+
+\caption{\label{tab:rdd_results_careerpaths}RD Estimates of Being Elected on Career Paths}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Finance} & \multicolumn{2}{c}{Colonial} & \multicolumn{2}{c}{Mayor} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Panel A: Unconditional Estimates}}\\
+\hspace{1em}Coefficient & 0.002 & 0.003 & 0.001 & 0.000 & -0.007 & -0.020\\
+\hspace{1em}SE (BC) & (0.021) & (0.021) & (0.030) & (0.029) & (0.031) & (0.030)\\
+\hspace{1em}Mean DV Treated (1\%) & 0.062 & 0.059 & 0.062 & 0.059 & 0.000 & \vphantom{1} 0.000\\
+\hspace{1em}Mean DV Control (1\%) & 0.028 & 0.028 & 0.056 & 0.056 & 0.042 & \vphantom{1} 0.042\\
+\hspace{1em}N (Politicians) & 587 & 593 & 587 & 593 & 587 & \vphantom{1} 593\\
+\hspace{1em}N (Non-Politicians) & 1112 & 1126 & 1112 & 1126 & 1112 & \vphantom{1} 1126\\
+\hspace{1em}Bandwidth & Optimal & Optimal & Optimal & Optimal & Optimal & \vphantom{1} Optimal\\
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Panel B: Before and After Party Establishment}}\\
+\hspace{1em}Coefficient (Before Party) & 0.017 & 0.018 & 0.002 & 0.004 & -0.001 & -0.003\\
+\hspace{1em}SE (Before Party) & (0.035) & (0.035) & (0.044) & (0.045) & (0.034) & (0.034)\\
+\hspace{1em}Coefficient (After Party) & -0.031 & -0.023 & 0.005 & 0.000 & -0.023 & -0.049\\
+\hspace{1em}SE (After Party) & (0.027) & (0.028) & (0.026) & (0.025) & (0.054) & (0.053)\\
+\hspace{1em}Mean DV Treated (1\%) & 0.062 & 0.059 & 0.062 & 0.059 & 0.000 & 0.000\\
+\hspace{1em}Mean DV Control (1\%) & 0.028 & 0.028 & 0.056 & 0.056 & 0.042 & 0.042\\
+\hspace{1em}N (Politicians) & 587 & 593 & 587 & 593 & 587 & 593\\
+\hspace{1em}N (Non-Politicians) & 1112 & 1126 & 1112 & 1126 & 1112 & 1126\\
+\hspace{1em}Bandwidth & Optimal & Optimal & Optimal & Optimal & Optimal & Optimal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing the effect of being elected into politics on three future career paths: taking up a position in finance (business), continuing in non-lower house politics (as a mayor), and taking up a career in the colonies. Bias-corrected and Robust standard errors clustered at the individual-level. All effects are estimated under the MSE-optimal bandwidth. I use two sets of covariates: first, I control for total amount of votes, age, newspaper recommendations and economic and demographic composition of the district. Second, I control for newspaper recommendations, the number of tries, and the economic and demographic composition of the candidate's birthplace. *: p < 0.10, **: p < 0.05, ***: p < 0.01.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

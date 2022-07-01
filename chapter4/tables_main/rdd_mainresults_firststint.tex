@@ -1,0 +1,27 @@
+\begin{table}[!h]
+
+\caption{\label{tab:mainresults}Main RD Estimates - 1st Term}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lllllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{4}{c}{First Triers} & \multicolumn{2}{c}{Second Triers} & \multicolumn{2}{c}{All Triers} \\
+\cmidrule(l{3pt}r{3pt}){2-5} \cmidrule(l{3pt}r{3pt}){6-7} \cmidrule(l{3pt}r{3pt}){8-9}
+  & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\
+\midrule
+Coefficient (ITT) & 1.731 & 1.861 & 2.041 & 2.123 & 1.446 & 1.256 & 0.995 & 0.754\\
+SE (BC) & (0.716)* & (0.539)*** & (0.784)** & (0.600)*** & (0.910) & (0.716)* & (0.496)** & (0.377)**\\
+Mean DV Treated (1\%) & 12.849 & 12.849 & 12.901 & 12.901 & 11.059 & 11.059 & 12.375 & 12.375\\
+Mean DV Control (1\%) & 10.193 & 10.193 & 10.887 & 10.887 & 9.759 & 9.759 & 10.706 & 10.706\\
+N (Politicians) & 103 & 103 & 86 & 86 & 65 & 65 & 295 & 295\\
+N (Non-Politicians) & 172 & 172 & 158 & 158 & 182 & 182 & 774 & 774\\
+Bandwidth & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing Bias-corrected standard errors clustered at the individual-level. The first two columns show univariate regressions under the optimal MSE bandwidth, and twice the optimal bandwidth. In columns 3 and 4, selected covariates are added, in particular, covariates that seemed to be unbalanced at the 2\% cutoff. In particular, the regression controls for birthplace population, birthplace characteristics, age at election, and socialist recommendations. In addition, I control for politicians' lifespan. Columns 5 and 6 focus on second-triers and columns 7 and 8 pool all attempts. *: p < 0.10, **: p < 0.05, ***: p < 0.01. 
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

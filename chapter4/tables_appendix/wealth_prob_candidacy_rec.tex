@@ -1,0 +1,27 @@
+\begin{table}[!h]
+
+\caption{\label{tab:wealth_prob_candidacy_rec}Correlation between Wealth and Probability of Candidacy and Recommendation}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Personal Wealth & \num{0.006} & \num{0.004} & \num{0.000} & \num{0.023}** & \num{-0.008} & \num{0.048}**\\
+ & (\num{0.005}) & (\num{0.009}) & (\num{0.010}) & (\num{0.011}) & (\num{0.014}) & (\num{0.023})\\
+\midrule
+N & \num{1002} & \num{361} & \num{251} & \num{199} & \num{150} & \num{114}\\
+Adj. R2 & \num{0.16} & \num{0.17} & \num{0.18} & \num{0.27} & \num{0.24} & \num{0.05}\\
+Party Controls & Yes & Yes & Yes & Yes & Yes & Yes\\
+Electoral Controls & Yes & Yes & Yes & Yes & Yes & Yes\\
+District FE & Yes & Yes & Yes & Yes & Yes & Yes\\
+\bottomrule
+\multicolumn{7}{l}{\rule{0pt}{1em}* p $<$ 0.1, ** p $<$ 0.05, *** p $<$ 0.01}\\
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Robust standard errors in parentheses. Analysis show the correlation between end-of-life wealth and probability of candidacy and recommendation in the 1st election in (1). Then, in the second election given that the first election was won, in (2), etc. Estimates are conditional on party controls, electoral controls, and district fixed effects. *: p<0.1, **: p<0.05, ***:p<0.01.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

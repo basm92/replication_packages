@@ -1,0 +1,30 @@
+\begin{table}[!h]
+
+\caption{\label{tab:rdd_party_interaction_perparty}Estimates In and Out-Party, Per Party}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Catholic} & \multicolumn{2}{c}{Liberal} & \multicolumn{2}{c}{Protestant} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Coefficient (Without Party) & -1.709 & -1.661 & 1.112 & 1.103 & 1.074 & 1.360\\
+SE (Without Party) & (0.996) & (1.034) & (0.840) & (0.879) & (0.858) & (0.948)*\\
+Coefficient (Within Party) & 9.729 & -2.402 & -0.975 & -0.838 & 0.569 & 0.563\\
+SE (Within Party) & (11.637) & (16.103) & (0.886) & (0.894) & (1.160) & (1.065)\\
+p-value Difference & 0.11 & 1.75 & 0.066 & 0.104 & 1.31 & 1.204\\
+Mean DV Treated & 10.274 & 10.274 & 12.560 & 12.560 & 12.082 & 12.082\\
+Mean DV Control & 10.227 & 10.227 & 10.549 & 10.549 & 11.051 & 11.051\\
+N Treated & 47 & 49 & 173 & 174 & 73 & 73\\
+N Control & 79 & 84 & 254 & 259 & 296 & 298\\
+Bandwidth & Optimal & Optimal & Optimal & Optimal & Optimal & Optimal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item The table shows RD estimates using the MSE-optimal bandwidth \citep{cattaneo2019practical}. The Dependent Variable is Log(1+Personal Wealth). I report bias-corrected standard errors. The first two columns show estimates of the returns for the first-triers for the first stint, the second two estimates the returns for the second stint, and the third pair shows the results for all triers. Columns (1), (3) and (5) contain estimates with covariates including party, lifespan, number of votes, age, and number of candidates. Columns (2), (4) and (6) control for number of tries, party, district economic composition and total amount of votes. *: p < 0.1, **: p < 0.05, ***: p < 0.01.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

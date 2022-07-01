@@ -1,0 +1,27 @@
+\begin{table}[!h]
+
+\caption{\label{tab:mainresults_ihsversion}Robustness to Main RD Estimates - 1st Period: Ihs}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lllllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{4}{c}{First Triers} & \multicolumn{2}{c}{Second Triers} & \multicolumn{2}{c}{All Triers} \\
+\cmidrule(l{3pt}r{3pt}){2-5} \cmidrule(l{3pt}r{3pt}){6-7} \cmidrule(l{3pt}r{3pt}){8-9}
+  & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)\\
+\midrule
+Coefficient (ITT) & 1.294 & 1.417 & 1.607 & 1.556 & 0.421 & 0.484 & 0.618 & 0.495\\
+SE (BC) & (0.575)* & (0.455)*** & (0.588)** & (0.474)*** & (0.656) & (0.527) & (0.350)* & (0.276)*\\
+Mean DV Treated (1\%) & 13.542 & 13.542 & 13.594 & 13.594 & 11.752 & 11.752 & 13.068 & 13.068\\
+Mean DV Control (1\%) & 12.019 & 12.019 & 12.357 & 12.357 & 11.672 & 11.672 & 12.113 & 12.113\\
+N (Politicians) & 102 & 102 & 85 & 85 & 65 & 65 & 292 & 292\\
+N (Non-Politicians) & 167 & 167 & 153 & 153 & 176 & 176 & 761 & 761\\
+Bandwidth & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal & Optimal & 2x Optimal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Table showing Bias-corrected standard errors clustered at the individual-level. The dependent variable is ihs(Personal Wealth). The first two columns show univariate regressions under the optimal MSE bandwidth, and twice the optimal bandwidth. In columns 3 and 4, selected covariates are added, in particular, covariates that seemed to be unbalanced at the 2\% cutoff. In particular, the regression controls for birthplace population, birthplace characteristics, age at election, and socialist recommendations. In addition, I control for politicians' lifespan. Columns 5 and 6 focus on second-triers and columns 7 and 8 pool all attempts. *: p < 0.10, **: p < 0.05, ***: p < 0.01. 
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

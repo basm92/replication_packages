@@ -1,0 +1,52 @@
+\begin{table}[!h]
+
+\caption{\label{tab:covbal_thirdrents}Covariate Balance - Third Term}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{llllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Margin < 0.2} & \multicolumn{3}{c}{Margin < 0.05} & \multicolumn{1}{c}{ } \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7}
+  & Politicians & Non-Politicians & p-val. & Politicians  & Non-Politicians  & p-val.  & RD Estimate (SD)\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel A: Newspaper Recommendations}}\\
+\hspace{1em}Rec.: Protestant & \num{0.19} & \num{0.25} & 0.273 & \num{0.15} & \num{0.21} & 0.616 & -0.011 (0.100)\\
+\hspace{1em}Rec.: Liberal & \num{0.24} & \num{0.21} & 0.538 & \num{0.18} & \num{0.29} & 0.449 & 0.032 (0.115)\\
+\hspace{1em}Rec.: Socialist & \num{0.04} & \num{0.03} & 0.752 & \num{0.05} & \num{0.00} & 0.025** & 0.017 (0.040)\\
+\hspace{1em}Rec: Catholic & \num{0.22} & \num{0.27} & 0.390 & \num{0.22} & \num{0.29} & 0.650 & 0.066 (0.094)\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel B: Demographic Characteristics}}\\
+\hspace{1em}Lifespan & \num{19.67} & \num{18.45} & 0.372 & \num{20.06} & \num{13.55} & 0.033** & -1.384 (2.992)\\
+\hspace{1em}Age at Election & \num{50.02} & \num{49.05} & 0.457 & \num{50.29} & \num{49.79} & 0.847 & 3.341 (2.226)\\
+\hspace{1em}Year of Death & \num{1900.83} & \num{1900.13} & 0.824 & \num{1898.38} & \num{1898.57} & 0.976 & 0.855 (6.362)\\
+\hspace{1em}Year of Election & \num{1879.33} & \num{1880.71} & 0.622 & \num{1878.38} & \num{1883.00} & 0.429 & -1.737 (4.298)\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel C: Election Characteristics}}\\
+\hspace{1em}Log Turnout & \num{8.04} & \num{8.20} & 0.219 & \num{7.99} & \num{8.30} & 0.146 & -0.156 (0.237)\\
+\hspace{1em}Log Turnout Previous & \num{7.93} & \num{8.06} & 0.304 & \num{7.93} & \num{7.98} & 0.841 & -0.356 (0.249)\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel D: Birthplace Characteristics}}\\
+\hspace{1em}Log Population 1859 & \num{9.61} & \num{9.36} & 0.313 & \num{9.68} & \num{9.43} & 0.621 & 0.540 (0.558)\\
+\hspace{1em}Share Protestant & \num{0.61} & \num{0.59} & 0.589 & \num{0.58} & \num{0.63} & 0.590 & -0.035 (0.056)\\
+\hspace{1em}Share Catholic & \num{0.35} & \num{0.39} & 0.490 & \num{0.38} & \num{0.35} & 0.740 & 0.038 (0.058)\\
+\hspace{1em}Labor Force Share Agricul. & \num{0.06} & \num{0.05} & 0.805 & \num{0.03} & \num{0.06} & 0.563 & -0.009 (0.020)\\
+\hspace{1em}Labor Force Share Industry & \num{0.20} & \num{0.20} & 0.990 & \num{0.20} & \num{0.18} & 0.541 & 0.009 (0.027)\\
+\hspace{1em}Taxes Per Capita 1859 & \num{4.15} & \num{4.02} & 0.597 & \num{4.19} & \num{4.09} & 0.859 & 0.589 (0.425)\\
+\hspace{1em}Taxes Per Capita 1889 & \num{5.00} & \num{4.82} & 0.456 & \num{5.13} & \num{4.62} & 0.302 & 0.393 (0.413)\\
+\hspace{1em}Distance to the Hague & \num{89.98} & \num{93.20} & 0.744 & \num{87.80} & \num{81.87} & 0.761 & -19.465 (14.770)\\
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Panel E: District Characteristics}}\\
+\hspace{1em}Share Protestant & \num{0.64} & \num{0.67} & 0.389 & \num{0.62} & \num{0.66} & 0.610 & -0.057 (0.051)\\
+\hspace{1em}Share Catholic & \num{0.33} & \num{0.30} & 0.448 & \num{0.35} & \num{0.31} & 0.699 & 0.064 (0.051)\\
+\hspace{1em}Labor Force Share Agricul. & \num{0.06} & \num{0.05} & 0.222 & \num{0.07} & \num{0.06} & 0.967 & -0.011 (0.016)\\
+\hspace{1em}Labor Force Share Industry & \num{0.22} & \num{0.21} & 0.436 & \num{0.23} & \num{0.24} & 0.600 & 0.008 (0.020)\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item The table contains means for various sets of variables conditioned on the absolute margin being < 0.2 (left panel) and <0.05 (right panel). The first two columns represent the means for subsequent politicians and non-politicians respectively, and the third column shows the p-value of a Welch two-sample t-test. The last column shows the local non-parametric RD estimate, estimated by the procedure in \cite{cattaneo2019practical}. HC-Robust standard errors are shown between brackets. Significance is indicated by *: p < 0.1, **: p < 0.05, ***: p < 0.01.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}
