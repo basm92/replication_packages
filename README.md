@@ -8,6 +8,13 @@
 - In each repository, aside from the Code used to create the Tables and Figures, there are also several auxiliary files used to shorten the Code.
 
 - To use this, either click on the Green "Code" button (upper right), and then on "Download ZIP", or alternatively, download and install git, and fork this repository. 
+
+- Run the `replication_packages.Rproj` file to start up the R project. 
+
+- Then, if you want to focus on a specific chapter, run `set_working_directory.R`, which will ask for a prompt and set the working directory appropriately for any of the chapters.
+	- Make sure to stay in the same R session. 
+	
+- Below is a .gif that demonstrates this for one particular table:
 	
 - If you find any mistakes or typos, please contact me at:
 	- a.h.machielsen at uu dot nl
