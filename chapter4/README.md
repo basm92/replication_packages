@@ -13,7 +13,8 @@
   ### Data
 
   - There are various datasets, themselves the product of aggregations of raw data, in the folder `/Data/analysis/`. The dataset used on the basis of which the results are obtained is called `full_sample_analysis_allvars.csv`. 
-  - This dataset is itself being cleaned in the file `/Code/Analysis/new_data_analysis.R`. 
+  - This dataset is itself being cleaned slightly in the file `/Code/Analysis/new_data_analysis.R`. 
   - This file creates various R objects on the basis of which the analyses are conducted. 
-  - And can be easily converted to e.g. .csv, Pickle, or anything else. 
+  - These files are loaded into R memory as `firstrents_{number of try}`, `secondrents`, etc. The aggregate file is also loaded into R memory as `dataset`. 
+  - These files be easily converted to e.g. .csv, Pickle, or anything else. 
 
