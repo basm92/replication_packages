@@ -15,6 +15,8 @@
 	- Make sure to stay in the same R session. 
 	
 - Below is a .gif that demonstrates this for one particular table:
+
+![Demonstration of Replication](https://raw.githubusercontent.com/basm92/replication_packages/master/replication_package_demonstration.gif)
 	
 - If you find any mistakes or typos, please contact me at:
 	- a.h.machielsen at uu dot nl
